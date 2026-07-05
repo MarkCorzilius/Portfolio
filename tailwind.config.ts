@@ -8,11 +8,14 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
+        surface: "var(--surface)",
+        elevated: "var(--elevated)",
         foreground: "var(--foreground)",
 
-        primary: "var(--primary)",
-        muted: "var(--muted)",
-        border: "var(--border)",
+        text: "var(--text)",
+        "text-muted": "var(--text-muted)",
+        primary: "var(--btn-primary)",
+        "primary-foreground": "var(--btn-primary-text)",
       },
 
       fontFamily: {
