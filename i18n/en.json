@@ -9,5 +9,19 @@
   "githubAlt": "GitHub",
   "emailAlt": "Email",
   "seeProjects": "See projects →",
-  "profileImageAlt": "Profile Image"
+  "profileImageAlt": "Profile Image",
+  "aboutTitle": "About Me",
+  "aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "aboutLocationLabel": "Location",
+  "aboutLocationValue": "Berlin, Germany",
+  "aboutLanguagesLabel": "Languages",
+  "aboutLanguagesValue": "German, English",
+  "aboutEducationLabel": "Education",
+  "aboutEducationValue": "Software Development Training",
+  "aboutFocusLabel": "Focus",
+  "aboutFocusValue": "Fullstack Development",
+  "aboutProjectsCompleted": "Projects Completed",
+  "aboutYearsProgramming": "Year Programming",
+  "aboutCommitsLastYear": "Commits (Last Year)",
+  "aboutMasteredTechnologies": "Mastered Technologies"
 }

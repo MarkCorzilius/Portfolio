@@ -9,5 +9,19 @@
   "githubAlt": "GitHub",
   "emailAlt": "E-Mail",
   "seeProjects": "Projekte ansehen →",
-  "profileImageAlt": "Profilbild"
+  "profileImageAlt": "Profilbild",
+  "aboutTitle": "Über mich",
+  "aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "aboutLocationLabel": "Standort",
+  "aboutLocationValue": "Berlin, Deutschland",
+  "aboutLanguagesLabel": "Sprachen",
+  "aboutLanguagesValue": "Deutsch, Englisch",
+  "aboutEducationLabel": "Ausbildung",
+  "aboutEducationValue": "Ausbildung in der Softwareentwicklung",
+  "aboutFocusLabel": "Schwerpunkt",
+  "aboutFocusValue": "Fullstack-Entwicklung",
+  "aboutProjectsCompleted": "Abgeschlossene Projekte",
+  "aboutYearsProgramming": "Jahr Programmierung",
+  "aboutCommitsLastYear": "Commits (letztes Jahr)",
+  "aboutMasteredTechnologies": "Beherrschte Technologien"
 }
