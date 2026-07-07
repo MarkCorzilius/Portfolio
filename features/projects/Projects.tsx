@@ -6,6 +6,7 @@ const cards = [
     logo: "/images/project_dabubble.svg",
     title: "DaBubble",
     description: "CRM Business App",
+    type: "Frontend",
     live: "https://markcorzilius.com/dabubble",
     github: "https://github.com/MarkCorzilius/DaBubble",
   },
@@ -13,6 +14,7 @@ const cards = [
     logo: "/images/project_join.svg",
     title: "Join",
     description: "Task Management Tool",
+    type: "Frontend",
     live: "https://markcorzilius.com/join",
     github: "https://github.com/MarkCorzilius/Join",
   },
@@ -20,6 +22,7 @@ const cards = [
     logo: "/images/project_el_pollo_loco.svg",
     title: "El Pollo Loco",
     description: "2D Multi-Level Game",
+    type: "Frontend",
     live: "https://markcorzilius.com/el-pollo-loco",
     github: "https://github.com/MarkCorzilius/El-Pollo-Loco",
   },
@@ -27,20 +30,21 @@ const cards = [
 
 export default function Projects() {
   return (
-    <section className="bg-surface font-bold text-dark font-serif py-16 px-6 lg:px-12">
-      <h2 className="italic text-5xl mb-8">Projects</h2>
+    <section id="projects" className="bg-surface text-dark font-serif py-16 px-6 lg:px-12">
+      <h2 className="italic font-bold text-4xl mb-8">Projects</h2>
       <div className="w-20 h-[2px] bg-black mt-6 mb-12"></div>
       <div className="flex flex-wrap gap-12">
         {cards.map((card) => (
           <article
             key={card.title}
             className="
-            group/project
+            has-[.action-btn:hover]:[&_.project-img]:scale-114
+            has-[.action-btn:hover]:[&_.project-arrow]:stroke-black
+            has-[.action-btn:hover]:[&_.project-img-wrapper]:shadow-lg
             relative
             flex flex-col
             gap-4
             w-64
-            cursor-pointer
             p-4
             "
           >
@@ -70,6 +74,8 @@ export default function Projects() {
             <div>
               <div
                 className="
+                project-img-wrapper
+                relative
                 aspect-square
                 p-3
                 rounded-xl
@@ -78,19 +84,34 @@ export default function Projects() {
                 shadow-sm
                 transition-shadow
                 duration-300
-                group-hover/project:shadow-lg
                 "
               >
+                <span
+                  className="
+                absolute
+                top-3
+                right-3
+                px-3
+                py-1
+                text-[10px]
+                font-sans
+                font-bold
+                uppercase
+                tracking-wide
+                "
+                >
+                  {card.type}
+                </span>
                 <img
                   src={card.logo}
                   alt={card.title}
                   className="
+                  project-img
                   w-full
                   h-full
                   object-contain
                   transition-transform
                   duration-300
-                  group-hover/project:scale-114
                   "
                 />
               </div>
@@ -104,10 +125,10 @@ export default function Projects() {
                   width={12}
                   height={12}
                   className="
+                  project-arrow
                   stroke-neutral-300
                   transition-colors
                   duration-300
-                  group-hover/project:stroke-black
                   "
                   viewBox="0 0 24 24"
                   fill="none"

@@ -77,10 +77,10 @@ export default function About() {
   const about = t as Record<AboutKey, string>;
 
   return (
-    <section className="bg-surface py-24 px-6 lg:px-12">
+    <section id="about" className="bg-surface py-16 px-6 lg:px-12">
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-20 items-start">
         <div>
-          <h2 className="text-5xl font-serif font-bold leading-tight text-black">{about.aboutTitle}</h2>
+          <h2 className="text-4xl font-serif italic font-bold text-black">{about.aboutTitle}</h2>
 
           <div className="w-20 h-[2px] bg-black mt-6 mb-8" />
 

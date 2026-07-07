@@ -32,9 +32,9 @@ const skillGroups = [
 
 export default function Skills() {
   return (
-    <section className="bg-white py-16 px-6 lg:px-12">
+    <section id="skills" className="bg-white py-16 px-6 lg:px-12">
       <div className="mx-auto max-w-7xl">
-        <h2 className="text-5xl font-serif font-bold text-black">Skills</h2>
+        <h2 className="text-4xl italic font-serif font-bold text-black mb-8">Skills</h2>
 
         <div className="w-20 h-[2px] bg-black mt-6 mb-12" />
 
@@ -60,10 +60,6 @@ export default function Skills() {
                       px-4
                       py-2.5
                       shadow-sm
-                      transition-all
-                      duration-200
-                      hover:-translate-y-0.5
-                      hover:shadow-md
                     "
                   >
                     <img src={skill.icon} alt={skill.name} className="w-5 h-5 object-contain" />
