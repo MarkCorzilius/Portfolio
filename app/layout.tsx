@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Mark Corzilius",
   description: "Personal Portfolio",
   icons: {
-    icon: "/icons/logo.svg",
+    icon: "/assets/icons/logo.svg",
   }
 };
 

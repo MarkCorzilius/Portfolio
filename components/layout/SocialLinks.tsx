@@ -13,7 +13,7 @@ export default function SocialLinks({ theme = "dark" }) {
           width={40}
           height={40}
           className={`${hoverBg} rounded-lg hover:scale-120 transition-all duration-300 cursor-pointer`}
-          src={`/icons/linkedin.${iconVariant}.svg`}
+          src={`/assets/icons/linkedin.${iconVariant}.svg`}
           alt={t.linkedInAlt}
         />
       </a>
@@ -23,7 +23,7 @@ export default function SocialLinks({ theme = "dark" }) {
           width={40}
           height={40}
           className={`${hoverBg} rounded-lg hover:scale-120 transition-all duration-300 cursor-pointer`}
-          src={`/icons/github.${iconVariant}.svg`}
+          src={`/assets/icons/github.${iconVariant}.svg`}
           alt={t.githubAlt}
         />
       </a>
@@ -33,7 +33,7 @@ export default function SocialLinks({ theme = "dark" }) {
           width={40}
           height={40}
           className={`${hoverBg} rounded-lg hover:scale-120 transition-all duration-300 cursor-pointer`}
-          src={`/icons/email.${iconVariant}.svg`}
+          src={`/assets/icons/email.${iconVariant}.svg`}
           alt={t.emailAlt}
         />
       </a>

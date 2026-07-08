@@ -2,6 +2,7 @@
 
 import SkillsMarquee from "@/components/layout/SkillsMarquee";
 import SocialLinks from "@/components/layout/SocialLinks";
+import { scrollToSection } from "@/components/utils/ScrollToSection";
 import { useTranslation } from "@/i18n/useTranslation";
 
 export default function Hero() {
@@ -33,7 +34,10 @@ export default function Hero() {
             <div className="flex items-center mt-8 gap-8">
               <SocialLinks theme="dark" />
 
-              <button className="text-neutral-500 text-lg hover:text-black transition-[color,transform] cursor-pointer ease-in-out hover:translate-x-1 transition-all duration-300">
+              <button
+                onClick={() => scrollToSection("projects")}
+                className="text-neutral-500 text-lg hover:text-black transition-[color,transform] cursor-pointer ease-in-out hover:translate-x-1 transition-all duration-300"
+              >
                 {t.seeProjects}
               </button>
             </div>

@@ -20,22 +20,22 @@ type AboutKey =
 
 const details = [
   {
-    icon: "/icons/location_pin.svg",
+    icon: "/assets/icons/location_pin.svg",
     labelKey: "aboutLocationLabel",
     valueKey: "aboutLocationValue",
   },
   {
-    icon: "/icons/globe.svg",
+    icon: "/assets/icons/globe.svg",
     labelKey: "aboutLanguagesLabel",
     valueKey: "aboutLanguagesValue",
   },
   {
-    icon: "/icons/education.svg",
+    icon: "/assets/icons/education.svg",
     labelKey: "aboutEducationLabel",
     valueKey: "aboutEducationValue",
   },
   {
-    icon: "/icons/code_brackets.svg",
+    icon: "/assets/icons/code_brackets.svg",
     labelKey: "aboutFocusLabel",
     valueKey: "aboutFocusValue",
   },
@@ -47,22 +47,22 @@ const details = [
 
 const achievements = [
   {
-    icon: "/icons/folder.svg",
+    icon: "/assets/icons/folder.svg",
     value: "13+",
     labelKey: "aboutProjectsCompleted",
   },
   {
-    icon: "/icons/calendar.svg",
+    icon: "/assets/icons/calendar.svg",
     value: "1,5+",
     labelKey: "aboutYearsProgramming",
   },
   {
-    icon: "/icons/github.svg",
+    icon: "/assets/icons/github.svg",
     value: "735+",
     labelKey: "aboutCommitsLastYear",
   },
   {
-    icon: "/icons/code_brackets.svg",
+    icon: "/assets/icons/code_brackets.svg",
     value: "12+",
     labelKey: "aboutMasteredTechnologies",
   },

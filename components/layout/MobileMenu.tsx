@@ -27,7 +27,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
     onClose();
 
     setTimeout(() => {
-      scrollToSection(id);
+      scrollToSection(id, 48);
     }, 100);
   };
 
@@ -36,7 +36,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
   return (
     <div className="fixed inset-0 z-50 flex min-h-screen flex-col overflow-hidden bg-surface px-8 font-serif">
       <header className="flex items-center justify-between py-6">
-        <img src="icons/logo.svg" alt={t.logoAlt} className="h-10" />
+        <img src="/assets/icons/logo.svg" alt={t.logoAlt} className="h-10" />
 
         <button
           onClick={onClose}
