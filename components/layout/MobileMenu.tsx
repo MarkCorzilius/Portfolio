@@ -188,7 +188,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
         "
       >
         <div
-          className="absolute inset-0 bg-white"
+          className="absolute inset-0 bg-black"
           style={{
             clipPath: "polygon(0 45%,100% 0,100% 100%,0 100%)",
           }}
@@ -205,7 +205,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
             pb-5
           "
         >
-          <SocialLinks />
+          <SocialLinks theme="light" />
         </div>
       </footer>
     </div>

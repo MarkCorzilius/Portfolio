@@ -31,7 +31,7 @@ export default function Hero() {
             <p className="mt-8 text-text text-lg">{t.heroTagline}</p>
 
             <div className="flex items-center mt-8 gap-8">
-              <SocialLinks />
+              <SocialLinks theme="dark" />
 
               <button className="text-neutral-500 text-lg hover:text-black transition-[color,transform] cursor-pointer ease-in-out hover:translate-x-1 transition-all duration-300">
                 {t.seeProjects}

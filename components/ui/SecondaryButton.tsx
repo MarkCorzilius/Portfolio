@@ -4,7 +4,7 @@ type SecondaryButtonProps = {
 };
 
 export default function SecondaryButton({ text, link }: SecondaryButtonProps) {
-  const styles = "action-btn px-5 py-2.5 bg-transparent text-black border-black border-1 hover:bg-neutral-200 transition-all duration-300 cursor-pointer rounded-full";
+  const styles = "action-btn px-5 py-2.5 bg-transparent text-black border-black border hover:bg-neutral-100 transition-all duration-300 cursor-pointer rounded-full";
 
   if (link) {
     return <a href={link} target="_blank" className={styles}>{text}</a>;
