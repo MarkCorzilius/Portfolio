@@ -1,14 +1,16 @@
 "use client";
 
 import { useTranslation } from "@/i18n/useTranslation";
-import DarkButton from "../ui/PrimaryButton";
 import LanguageSwitcher from "./LanguageSwitcher";
 import MobileMenu from "./MobileMenu";
 import { useState } from "react";
+import { scrollToSection } from "../utils/ScrollToSection";
+import PrimaryButton from "../ui/PrimaryButton";
 
 export default function Navbar() {
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
+
 
   return (
     <>
@@ -18,14 +20,14 @@ export default function Navbar() {
           <div className="hidden items-center gap-24 lg:flex">
             <section>
               <ul className="flex items-center gap-16">
-                <li className="text-neutral-500 font-medium hover:text-black transition-colors duration-300 cursor-pointer">{t.aboutMe}</li>
-                <li className="text-neutral-500 font-medium hover:text-black transition-colors duration-300 cursor-pointer">{t.skills}</li>
-                <li className="text-neutral-500 font-medium hover:text-black transition-colors duration-300 cursor-pointer">{t.projects}</li>
+                <li onClick={() => scrollToSection("about")} className="text-neutral-500 font-medium hover:text-black transition-colors duration-300 cursor-pointer">{t.aboutMe}</li>
+                <li onClick={() => scrollToSection("skills")} className="text-neutral-500 font-medium hover:text-black transition-colors duration-300 cursor-pointer">{t.skills}</li>
+                <li onClick={() => scrollToSection("projects")} className="text-neutral-500 font-medium hover:text-black transition-colors duration-300 cursor-pointer">{t.projects}</li>
               </ul>
             </section>
             <section className="flex items-center gap-4">
               <LanguageSwitcher />
-              <DarkButton text={t.contacts} />
+              <PrimaryButton text={t.contacts} scrollTo="contact" />
             </section>
           </div>
           <button className="cursor-pointer transition-all duration-300 lg:hidden" onClick={() => setMenuOpen(true)}>

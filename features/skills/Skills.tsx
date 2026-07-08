@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslation } from "@/i18n/useTranslation";
+
 const skillGroups = [
   {
     title: "Frontend",
@@ -31,10 +35,11 @@ const skillGroups = [
 ];
 
 export default function Skills() {
+  const { t } = useTranslation();
   return (
     <section id="skills" className="bg-white py-8 md:py-16 flex justify-center">
       <div className="w-full max-w-[1440px] px-4 sm:px-8 md:px-16">
-        <h2 className="mb-8 text-2xl italic font-serif font-bold text-black md:text-4xl">Skills</h2>
+        <h2 className="mb-8 text-2xl italic font-serif font-bold text-black md:text-4xl">{t.skills}</h2>
 
         <div className="w-20 h-[2px] bg-black mt-6 mb-12" />
 

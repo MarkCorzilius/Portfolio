@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useTranslation } from "@/i18n/useTranslation";
 import SocialLinks from "./SocialLinks";
 
@@ -12,8 +13,13 @@ export default function Footer() {
           <h2 className="text-lg">Mark Corzilius</h2>
           <p className="text-sm text-neutral-200">Software Engineer</p>
         </div>
-        <SocialLinks theme="light"/>
-        <p className="text-xs text-neutral-300">© 2026 Mark Corzilius · Impressum · Datenschutz</p>
+        <SocialLinks theme="light" />
+        <p className="text-xs text-neutral-300">
+          © 2026 Mark Corzilius ·{" "}
+          <Link href="/privacy-policy" className="underline underline-offset-4 transition hover:text-white">
+            {t.footerPrivacyPolicy}
+          </Link>
+        </p>
       </div>
     </footer>
   );

@@ -1,13 +1,15 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { scrollToSection } from "../utils/ScrollToSection";
 
 type PrimaryButtonProps = {
   text: string;
   link?: string;
+  scrollTo?: string;
 };
 
-export default function PrimaryButton({ text, link }: PrimaryButtonProps) {
+export default function PrimaryButton({ text, link, scrollTo }: PrimaryButtonProps) {
   const ref = useRef<HTMLElement | null>(null);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -59,6 +61,22 @@ export default function PrimaryButton({ text, link }: PrimaryButtonProps) {
       >
         <span className="relative z-10">{text}</span>
       </a>
+    );
+  } else if (scrollTo) {
+    return (
+      <button
+        ref={(element) => {
+          ref.current = element;
+        }}
+        onClick={() => scrollToSection("contact")}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={() => setIsHovered(false)}
+        className={styles}
+        style={glowStyle}
+      >
+        <span className="relative z-10">{text}</span>
+      </button>
     );
   }
 

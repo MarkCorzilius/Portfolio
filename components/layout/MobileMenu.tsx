@@ -3,8 +3,9 @@
 import { useEffect } from "react";
 import { useTranslation } from "@/i18n/useTranslation";
 import LanguageSwitcher from "./LanguageSwitcher";
-import DarkButton from "../ui/PrimaryButton";
 import SocialLinks from "./SocialLinks";
+import { scrollToSection } from "../utils/ScrollToSection";
+import PrimaryButton from "../ui/PrimaryButton";
 
 type MobileMenuProps = {
   open: boolean;
@@ -22,26 +23,15 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
     };
   }, [open]);
 
-  if (!open) return null;
-
-  const scrollToSection = (id: string) => {
+  const handleNavigation = (id: string) => {
     onClose();
 
     setTimeout(() => {
-      const element = document.getElementById(id);
-
-      if (element) {
-        const offset = 24;
-
-        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-
-        window.scrollTo({
-          top: elementPosition - offset,
-          behavior: "smooth",
-        });
-      }
+      scrollToSection(id);
     }, 100);
   };
+
+  if (!open) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex min-h-screen flex-col overflow-hidden bg-surface px-8 font-serif">
@@ -111,7 +101,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
               <ul className="flex flex-col items-center gap-10">
                 <li>
                   <button
-                    onClick={() => scrollToSection("about")}
+                    onClick={() => handleNavigation("about")}
                     className="
                 text-3xl
                 font-medium
@@ -129,7 +119,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
 
                 <li>
                   <button
-                    onClick={() => scrollToSection("skills")}
+                    onClick={() => handleNavigation("skills")}
                     className="
                 text-3xl
                 font-medium
@@ -147,7 +137,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
 
                 <li>
                   <button
-                    onClick={() => scrollToSection("projects")}
+                    onClick={() => handleNavigation("projects")}
                     className="
                 text-3xl
                 font-medium
@@ -168,8 +158,8 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
             <div className="mt-14 flex flex-col items-center gap-6">
               <LanguageSwitcher />
 
-              <div onClick={() => scrollToSection("contact")}>
-                <DarkButton text={t.contacts} />
+              <div onClick={() => handleNavigation("contact")}>
+                <PrimaryButton text={t.contacts} />
               </div>
             </div>
           </div>

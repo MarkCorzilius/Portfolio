@@ -18,7 +18,7 @@ type Props = {
 };
 
 export function LanguageProvider({ children }: Props) {
-  const [language, setLanguage] = useState<Language>("de");
+  const [language, setLanguage] = useState<Language>("en");
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
