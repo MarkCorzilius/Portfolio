@@ -24,7 +24,7 @@ const skillGroups = [
     skills: [
       { name: "Git", icon: "/icons/skills_git.svg" },
       { name: "GitHub", icon: "/icons/skills_github.svg" },
-      { name: "API", icon: "/icons/skills_api.svg" },
+      { name: "REST API", icon: "/icons/skills_api.svg" },
       { name: "Scrum", icon: "/icons/skills_scrum.svg" },
     ],
   },
@@ -32,39 +32,42 @@ const skillGroups = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-white py-16 px-6 lg:px-12">
-      <div className="mx-auto max-w-7xl">
-        <h2 className="text-4xl italic font-serif font-bold text-black mb-8">Skills</h2>
+    <section id="skills" className="bg-white py-8 md:py-16 flex justify-center">
+      <div className="w-full max-w-[1440px] px-4 sm:px-8 md:px-16">
+        <h2 className="mb-8 text-2xl italic font-serif font-bold text-black md:text-4xl">Skills</h2>
 
         <div className="w-20 h-[2px] bg-black mt-6 mb-12" />
 
-        <div className="space-y-8">
+        <div className="space-y-6 md:space-y-8">
           {skillGroups.map((group) => (
             <div key={group.title}>
-              <div className="flex items-center gap-6 mb-4">
-                <h3 className="text-xl font-semibold whitespace-nowrap">{group.title}</h3>
+              <div className="mb-4 flex items-center gap-4 sm:gap-6">
+                <h3 className="whitespace-nowrap text-lg font-semibold sm:text-xl">{group.title}</h3>
 
                 <div className="flex-1 h-px bg-neutral-300" />
               </div>
 
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2.5 sm:gap-3">
                 {group.skills.map((skill) => (
                   <div
                     key={skill.name}
                     className="
                       flex
                       items-center
-                      gap-2.5
+                      gap-2
+                      sm:gap-2.5
                       rounded-full
                       bg-surface
-                      px-4
-                      py-2.5
+                      px-3
+                      py-2
+                      sm:px-4
+                      sm:py-2.5
                       shadow-sm
                     "
                   >
                     <img src={skill.icon} alt={skill.name} className="w-5 h-5 object-contain" />
 
-                    <span className="text-sm font-medium text-black">{skill.name}</span>
+                    <span className="text-xs font-medium text-black sm:text-sm">{skill.name}</span>
                   </div>
                 ))}
               </div>

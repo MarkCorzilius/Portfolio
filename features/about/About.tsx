@@ -48,7 +48,7 @@ const details = [
 const achievements = [
   {
     icon: "/icons/folder.svg",
-    value: "12+",
+    value: "13+",
     labelKey: "aboutProjectsCompleted",
   },
   {
@@ -63,7 +63,7 @@ const achievements = [
   },
   {
     icon: "/icons/code_brackets.svg",
-    value: "6+",
+    value: "12+",
     labelKey: "aboutMasteredTechnologies",
   },
 ] as const satisfies ReadonlyArray<{
@@ -77,16 +77,16 @@ export default function About() {
   const about = t as Record<AboutKey, string>;
 
   return (
-    <section id="about" className="bg-surface py-16 px-6 lg:px-12">
-      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-20 items-start">
+    <section id="about" className="bg-surface py-8 flex justify-center md:py-16">
+      <div className="w-full max-w-[1440px] px-4 grid grid-cols-1 sm:px-8 md:px-16 xl:grid-cols-[1.2fr_0.8fr] gap-8 items-start">
         <div>
-          <h2 className="text-4xl font-serif italic font-bold text-black">{about.aboutTitle}</h2>
+          <h2 className="text-2xl font-serif italic font-bold text-black md:text-3xl lg:text-4xl">{about.aboutTitle}</h2>
 
           <div className="w-20 h-[2px] bg-black mt-6 mb-8" />
 
-          <p className="max-w-xl text-neutral-600 leading-8 text-lg">{about.aboutDescription}</p>
+          <p className="w-full text-neutral-600 leading-8 text-xs sm:text-base md:text-lg xl:max-w-xl">{about.aboutDescription}</p>
 
-          <div className="mt-12 grid grid-cols-2 gap-6">
+          <div className="mt-10 grid grid-cols-1 gap-5 sm:mt-12 sm:grid-cols-2 sm:gap-6">
             {details.map((item) => (
               <div key={item.labelKey} className="flex items-start gap-4">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
@@ -102,14 +102,15 @@ export default function About() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
           {achievements.map((item) => (
             <div
               key={item.labelKey}
               className="
                 bg-white
                 rounded-3xl
-                p-7
+                p-5
+                sm:p-7
                 shadow-sm
                 transition-all
                 duration-300

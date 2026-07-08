@@ -30,26 +30,28 @@ const cards = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-surface text-dark font-serif py-16 px-6 lg:px-12">
-      <h2 className="italic font-bold text-4xl mb-8">Projects</h2>
-      <div className="w-20 h-[2px] bg-black mt-6 mb-12"></div>
-      <div className="flex flex-wrap gap-12">
-        {cards.map((card) => (
-          <article
-            key={card.title}
-            className="
-            has-[.action-btn:hover]:[&_.project-img]:scale-114
-            has-[.action-btn:hover]:[&_.project-arrow]:stroke-black
-            has-[.action-btn:hover]:[&_.project-img-wrapper]:shadow-lg
-            relative
-            flex flex-col
-            gap-4
-            w-64
-            p-4
-            "
-          >
-            <div
+    <section id="projects" className="bg-surface py-8 md:py-16 text-dark font-serif flex justify-center">
+      <div className="w-full max-w-[1440px] px-4 sm:px-8 md:px-16">
+        <h2 className="mb-8 text-2xl italic font-bold md:text-4xl">Projects</h2>
+        <div className="w-20 h-[2px] bg-black mt-6 mb-10 md:mb-12"></div>
+        <div className="flex flex-wrap justify-center gap-6 md:justify-start md:gap-12">
+          {cards.map((card) => (
+            <article
+              key={card.title}
               className="
+              has-[.action-btn:hover]:[&_.project-img]:scale-114
+              has-[.action-btn:hover]:[&_.project-arrow]:stroke-black
+              has-[.action-btn:hover]:[&_.project-img-wrapper]:shadow-lg
+              relative
+              flex flex-col
+              gap-4
+              w-full
+              max-w-[19rem]
+              p-4
+              "
+            >
+              <div
+                className="
               absolute
               inset-0
               pointer-events-none
@@ -69,11 +71,11 @@ export default function Projects() {
               after:h-[3px]
               after:bg-surface
               "
-            />
+              />
 
-            <div>
-              <div
-                className="
+              <div>
+                <div
+                  className="
                 project-img-wrapper
                 relative
                 aspect-square
@@ -85,9 +87,9 @@ export default function Projects() {
                 transition-shadow
                 duration-300
                 "
-              >
-                <span
-                  className="
+                >
+                  <span
+                    className="
                 absolute
                 top-3
                 right-3
@@ -99,13 +101,13 @@ export default function Projects() {
                 uppercase
                 tracking-wide
                 "
-                >
-                  {card.type}
-                </span>
-                <img
-                  src={card.logo}
-                  alt={card.title}
-                  className="
+                  >
+                    {card.type}
+                  </span>
+                  <img
+                    src={card.logo}
+                    alt={card.title}
+                    className="
                   project-img
                   w-full
                   h-full
@@ -113,42 +115,43 @@ export default function Projects() {
                   transition-transform
                   duration-300
                   "
-                />
+                  />
+                </div>
               </div>
-            </div>
 
-            <div className="flex flex-col gap-2">
-              <div className="flex items-baseline gap-2">
-                <h3 className="font-semibold text-base text-dark">{card.title}</h3>
+              <div className="flex flex-col gap-2">
+                <div className="flex items-baseline gap-2">
+                  <h3 className="font-semibold text-base text-dark">{card.title}</h3>
 
-                <svg
-                  width={12}
-                  height={12}
-                  className="
+                  <svg
+                    width={12}
+                    height={12}
+                    className="
                   project-arrow
                   stroke-neutral-300
                   transition-colors
                   duration-300
                   "
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M7 17L17 7M17 7H7M17 7V17" />
-                </svg>
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </div>
+
+                <p className="text-neutral-500 text-xs">{card.description}</p>
               </div>
 
-              <p className="text-neutral-500 text-xs">{card.description}</p>
-            </div>
-
-            <div className="flex flex-col gap-2 mt-2">
-              <PrimaryButton text="Live Test" link={card.live} />
-              <SecondaryButton text="GitHub" link={card.github} />
-            </div>
-          </article>
-        ))}
+              <div className="flex flex-col gap-2 mt-2">
+                <PrimaryButton text="Live Test" link={card.live} />
+                <SecondaryButton text="GitHub" link={card.github} />
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

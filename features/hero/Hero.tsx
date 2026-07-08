@@ -8,17 +8,17 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col bg-surface justify-center items-center pt-24">
-      <div className="w-full max-w-[1440px] px-8 lg:px-16">
+    <div className="flex flex-col items-center justify-center bg-surface pt-20 sm:pt-24">
+      <div className="w-full max-w-[1440px] px-4 sm:px-8 md:px-16">
         <div className="flex flex-col items-center lg:hidden">
           <section className="flex flex-col items-center font-serif text-center mb-10">
-            <h1 className="text-3xl text-black font-semibold sm:text-4xl">Mark Corzilius</h1>
+            <h1 className="text-2xl text-black font-semibold sm:text-4xl">Mark Corzilius</h1>
 
-            <h2 className="text-3xl text-neutral-500 mt-2 sm:text-4xl">Software Engineer</h2>
+            <h2 className="mt-2 text-2xl text-neutral-500 sm:text-4xl">Software Engineer</h2>
           </section>
 
           <section>
-            <img src="/images/profile.png" width={360} height={360} alt={t.profileImageAlt} className="w-[280px] sm:w-[320px]" />
+            <img src="/images/profile.png" width={360} height={360} alt={t.profileImageAlt} className="w-full max-w-[280px] sm:max-w-[320px]" />
           </section>
         </div>
 

@@ -11,7 +11,7 @@
   "seeProjects": "See projects →",
   "profileImageAlt": "Profile Image",
   "aboutTitle": "About Me",
-  "aboutDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "aboutDescription": "I’m a Full-Stack Developer, and my main stack is Python, Django, TypeScript, and React. I bring practical experience from software projects in my previous role as a Product Engineer. I quickly adapt to new technologies and actively use AI to build efficient, high-quality solutions.",
   "aboutLocationLabel": "Location",
   "aboutLocationValue": "Berlin, Germany",
   "aboutLanguagesLabel": "Languages",
@@ -21,7 +21,7 @@
   "aboutFocusLabel": "Focus",
   "aboutFocusValue": "Fullstack Development",
   "aboutProjectsCompleted": "Projects Completed",
-  "aboutYearsProgramming": "Year Programming",
+  "aboutYearsProgramming": "Years Programming",
   "aboutCommitsLastYear": "Commits (Last Year)",
   "aboutMasteredTechnologies": "Mastered Technologies"
 }

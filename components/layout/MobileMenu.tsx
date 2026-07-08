@@ -71,7 +71,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
         </button>
       </header>
 
-      <main className="flex flex-1 items-start justify-center pt-12">
+      <main className="flex flex-1 items-start justify-center pt-4 md:pt-12">
         <div
           className="
       relative
