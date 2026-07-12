@@ -14,7 +14,7 @@ export default function Footer() {
           <p className="text-sm text-neutral-200">Software Engineer</p>
         </div>
         <SocialLinks theme="light" />
-        <p className="text-xs text-neutral-300">
+        <p className="text-sm text-neutral-300">
           © 2026 Mark Corzilius ·{" "}
           <Link href="/privacy-policy" className="underline underline-offset-4 transition hover:text-white">
             {t.footerPrivacyPolicy}

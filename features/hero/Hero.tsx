@@ -12,10 +12,10 @@ export default function Hero() {
     <div className="flex flex-col items-center justify-center bg-surface pt-20 sm:pt-24">
       <div className="w-full max-w-[1440px] px-4 sm:px-8 md:px-16">
         <div className="flex flex-col items-center lg:hidden">
-          <section className="flex flex-col items-center font-serif text-center mb-10">
-            <h1 className="text-2xl text-black font-semibold sm:text-4xl">Mark Corzilius</h1>
+          <section data-aos="fade-down" className="flex flex-col items-center font-serif text-center mb-10">
+            <h1 className="text-3xl text-black font-semibold sm:text-4xl">Mark Corzilius</h1>
 
-            <h2 className="mt-2 text-2xl text-neutral-500 sm:text-4xl">Software Engineer</h2>
+            <h2 className="mt-2 text-3xl text-neutral-500 sm:text-4xl">Software Engineer</h2>
           </section>
 
           <section>
@@ -24,10 +24,10 @@ export default function Hero() {
         </div>
 
         <div className="hidden lg:flex justify-between items-center gap-4">
-          <section className="flex flex-col items-start font-serif">
-            <h1 className="text-5xl mb-4 text-black font-semibold">Mark Corzilius</h1>
+          <section className="flex flex-col items-start font-serif" data-aos="fade-right">
+            <h1 className="mb-4 text-4xl text-black font-semibold xl:text-5xl">Mark Corzilius</h1>
 
-            <h2 className="text-5xl text-neutral-500">Software Engineer</h2>
+            <h2 className="text-4xl text-neutral-500 xl:text-5xl">Software Engineer</h2>
 
             <p className="mt-8 text-text text-lg">{t.heroTagline}</p>
 

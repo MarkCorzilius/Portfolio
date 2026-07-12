@@ -47,14 +47,17 @@ export default function Skills() {
           {skillGroups.map((group) => (
             <div key={group.title}>
               <div className="mb-4 flex items-center gap-4 sm:gap-6">
-                <h3 className="whitespace-nowrap text-lg font-semibold sm:text-xl">{group.title}</h3>
+                <h3 data-aos="fade-right" className="whitespace-nowrap text-lg font-semibold sm:text-xl">
+                  {group.title}
+                </h3>
 
-                <div className="flex-1 h-px bg-neutral-300" />
+                <div data-aos="fade-left" className="flex-1 h-px bg-neutral-300" />
               </div>
 
               <div className="flex flex-wrap gap-2.5 sm:gap-3">
                 {group.skills.map((skill) => (
                   <div
+                    data-aos="zoom-in"
                     key={skill.name}
                     className="
                       flex
@@ -72,7 +75,7 @@ export default function Skills() {
                   >
                     <img src={skill.icon} alt={skill.name} className="w-5 h-5 object-contain" />
 
-                    <span className="text-xs font-medium text-black sm:text-sm">{skill.name}</span>
+                    <span className="text-sm font-medium text-black">{skill.name}</span>
                   </div>
                 ))}
               </div>

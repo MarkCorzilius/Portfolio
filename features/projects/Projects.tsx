@@ -58,6 +58,7 @@ export default function Projects() {
   const renderCards = (projects: typeof cards) =>
     projects.map((card) => (
       <article
+        data-aos="fade-up"
         key={card.title}
         className="
         has-[.action-btn:hover]:[&_.project-img]:scale-114
@@ -116,7 +117,7 @@ export default function Projects() {
               right-3
               px-3
               py-1
-              text-[10px]
+              text-sm
               font-sans
               font-bold
               uppercase
@@ -164,7 +165,7 @@ export default function Projects() {
             </svg>
           </div>
 
-          <p className="text-neutral-500 text-xs">{card.description}</p>
+          <p className="text-sm leading-6 text-neutral-500">{card.description}</p>
         </div>
 
         <div className="flex flex-col gap-2 mt-2">
@@ -206,7 +207,9 @@ export default function Projects() {
             {Object.entries(groupedCards).map(([category, projects]) =>
               projects.length > 0 ? (
                 <div key={category}>
-                  <h3 className="mb-6 text-xl font-semibold">{category} Projects</h3>
+                  <h3 data-aos="fade-right" className="mb-6 text-xl font-semibold">
+                    {category} Projects
+                  </h3>
 
                   <div className="flex flex-wrap justify-center gap-6 md:justify-start md:gap-12">{renderCards(projects)}</div>
                 </div>

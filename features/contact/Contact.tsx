@@ -86,14 +86,16 @@ export default function Contact() {
 
             <div className="mt-6 mb-8 h-[2px] w-20 bg-black" />
 
-            <p className="max-w-sm font-serif leading-relaxed text-neutral-600">{t.contactMeText}</p>
+            <p className="max-w-sm font-serif leading-relaxed text-neutral-600">
+              {t.contactMeText}
+            </p>
 
             <div className="mt-10 flex flex-col gap-4 font-serif">
               <a href="mailto:markcorzilius@gmail.com" className="text-black transition hover:underline transition-all duration-300">
                 markcorzilius@gmail.com
               </a>
 
-              <a href="tel:+491234567890" className="text-black transition hover:underline transition-all duration-300">
+              <a href="tel:+491728610088" className="text-black transition hover:underline transition-all duration-300">
                 +49 172 8610088
               </a>
             </div>
