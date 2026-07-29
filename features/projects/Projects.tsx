@@ -33,10 +33,18 @@ const cards = [
   {
     logo: "/images/project_kanmind.svg",
     title: "KanMind",
-    description: "Task Management Tool",
+    description: "Task Management API",
     type: "Backend",
     live: null,
     github: "https://github.com/MarkCorzilius/KanMind",
+  },
+  {
+    logo: "/images/project_coderr.svg",
+    title: "Coderr",
+    description: "Freelancer Developer Platform",
+    type: "Backend",
+    live: null,
+    github: "https://github.com/MarkCorzilius/Coderr",
   },
 ];
 

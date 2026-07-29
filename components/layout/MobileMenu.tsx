@@ -35,9 +35,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex min-h-screen flex-col overflow-hidden bg-surface px-8 font-serif">
-      <header className="flex items-center justify-between py-6">
-        <img src="/assets/icons/logo.svg" alt={t.logoAlt} className="h-10" />
-
+      <header className="flex items-center justify-end py-6">
         <button
           onClick={onClose}
           aria-label="Close menu"

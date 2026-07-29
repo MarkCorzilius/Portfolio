@@ -48,7 +48,7 @@ const details = [
 const achievements = [
   {
     icon: "/assets/icons/folder.svg",
-    value: "13+",
+    value: "7+",
     labelKey: "aboutProjectsCompleted",
   },
   {
@@ -63,7 +63,7 @@ const achievements = [
   },
   {
     icon: "/assets/icons/code_brackets.svg",
-    value: "12+",
+    value: "14+",
     labelKey: "aboutMasteredTechnologies",
   },
 ] as const satisfies ReadonlyArray<{

@@ -19,7 +19,7 @@ export default function Hero() {
           </section>
 
           <section>
-            <img src="/images/profile.png" width={360} height={360} alt={t.profileImageAlt} className="w-full max-w-[280px] sm:max-w-[320px]" />
+            <img src="/images/profile.png" width={420} height={420} alt={t.profileImageAlt} className="mr-24" />
           </section>
         </div>
 
@@ -44,7 +44,7 @@ export default function Hero() {
           </section>
 
           <section>
-            <img src="/images/profile.png" width={360} height={360} alt={t.profileImageAlt} />
+            <img src="/images/profile.png" width={480} height={480} alt={t.profileImageAlt} />
           </section>
         </div>
       </div>

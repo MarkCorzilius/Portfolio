@@ -14,9 +14,8 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full fixed z-[10] font-serif top-0 flex justify-center items-center py-3 transition-all duration-300 bg-surface shadow-2xs">
-        <div className="w-full max-w-[1440px] flex items-center justify-between px-8 lg:px-16">
-          <img src="/assets/icons/logo.svg" alt={t.logoAlt} />
+      <nav className="w-full fixed z-[10] font-serif top-0 flex justify-end items-center py-3 transition-all duration-300 bg-surface shadow-2xs">
+        <div className="w-full max-w-[1440px] flex items-center justify-end px-8 lg:px-16">
           <div className="hidden items-center gap-24 lg:flex">
             <section>
               <ul className="flex items-center gap-16">

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   title: "Mark Corzilius",
   description: "Personal Portfolio",
   icons: {
-    icon: "/assets/icons/logo.svg",
+    icon: "/assets/icons/logo.png",
   },
 };
 
@@ -39,6 +39,9 @@ export default function RootLayout({
             <Footer />
           </LanguageProvider>
         </AOSProvider>
+        {process.env.NODE_ENV === "production" && (
+          <script defer type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d532df2994b14de9bbcc635097d927f2"}'></script>
+        )}
       </body>
     </html>
   );
