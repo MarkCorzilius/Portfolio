@@ -7,9 +7,10 @@ const skillGroups = [
     title: "Frontend",
     skills: [
       { name: "React", icon: "/assets/icons/skills_react.svg" },
-      { name: "Angular", icon: "/assets/icons/skills_angular.svg" },
+      { name: "Next.js", icon: "/assets/icons/skills_nextjs.svg" },
       { name: "TypeScript", icon: "/assets/icons/skills_ts.svg" },
       { name: "JavaScript", icon: "/assets/icons/skills_js.svg" },
+      { name: "Angular", icon: "/assets/icons/skills_angular.svg" },
       { name: "HTML", icon: "/assets/icons/skills_html.svg" },
       { name: "CSS", icon: "/assets/icons/skills_css.svg" },
       { name: "Tailwind", icon: "/assets/icons/skills_tailwind.svg" },
@@ -20,19 +21,21 @@ const skillGroups = [
     skills: [
       { name: "Python", icon: "/assets/icons/skills_python.svg" },
       { name: "Django", icon: "/assets/icons/skills_django.svg" },
-      { name: "DRF", icon: "/assets/icons/skills_drf.svg" },
+      { name: "Django REST Framework", icon: "/assets/icons/skills_drf.svg" },
+      { name: "REST APIs", icon: "/assets/icons/skills_api.svg" },
+      { name: "PostgreSQL", icon: "/assets/icons/skills_postgresql.svg" },
+      { name: "Redis", icon: "/assets/icons/skills_redis.svg" },
     ],
   },
   {
-    title: "Tools",
+    title: "Tools & Workflow",
     skills: [
       { name: "Git", icon: "/assets/icons/skills_git.svg" },
       { name: "GitHub", icon: "/assets/icons/skills_github.svg" },
-      { name: "REST API", icon: "/assets/icons/skills_api.svg" },
       { name: "Docker", icon: "/assets/icons/skills_docker.svg" },
-      { name: "Cloud", icon: "/assets/icons/skills_cloud.svg" },
-      { name: "Scrum", icon: "/assets/icons/skills_scrum.svg" },
+      { name: "Google Cloud", icon: "/assets/icons/skills_cloud.svg" },
       { name: "Linux", icon: "/assets/icons/skills_linux.svg" },
+      { name: "Scrum", icon: "/assets/icons/skills_scrum.svg" },
     ],
   },
 ];

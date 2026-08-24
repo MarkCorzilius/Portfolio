@@ -30,6 +30,14 @@ const cards = [
     live: "https://markcorzilius.com/el-pollo-loco",
     github: "https://github.com/MarkCorzilius/El-Pollo-Loco",
   },
+    {
+    logo: "/images/project_quizly.svg",
+    title: "Quizly",
+    description: "AI-Powered Quiz Generator",
+    type: "Backend",
+    live: null,
+    github: "https://github.com/MarkCorzilius/Quizly",
+  },
   {
     logo: "/images/project_kanmind.svg",
     title: "KanMind",
