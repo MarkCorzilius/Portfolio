@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
 
-const skills = ["Django", "Python", "React", "TypeScript", "Git", "Docker", "JavaScript", "HTML", "CSS", "GitHub", "Angular", "Figma"];
+const skills = ["Django", "Python", "React", "TypeScript", "Git", "Docker", "AWS", "Google Cloud", "JavaScript", "HTML", "CSS", "GitHub", "Angular", "Figma"];
 
 export default function SkillsMarquee() {
   return (

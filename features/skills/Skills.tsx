@@ -33,6 +33,7 @@ const skillGroups = [
       { name: "Git", icon: "/assets/icons/skills_git.svg" },
       { name: "GitHub", icon: "/assets/icons/skills_github.svg" },
       { name: "Docker", icon: "/assets/icons/skills_docker.svg" },
+      { name: "AWS", icon: "/assets/icons/skills_aws.svg" },
       { name: "Google Cloud", icon: "/assets/icons/skills_cloud.svg" },
       { name: "Linux", icon: "/assets/icons/skills_linux.svg" },
       { name: "Scrum", icon: "/assets/icons/skills_scrum.svg" },

@@ -30,14 +30,6 @@ const cards = [
     live: "https://markcorzilius.com/el-pollo-loco",
     github: "https://github.com/MarkCorzilius/El-Pollo-Loco",
   },
-    {
-    logo: "/images/project_quizly.svg",
-    title: "Quizly",
-    description: "AI-Powered Quiz Generator",
-    type: "Backend",
-    live: null,
-    github: "https://github.com/MarkCorzilius/Quizly",
-  },
   {
     logo: "/images/project_kanmind.svg",
     title: "KanMind",
@@ -53,6 +45,14 @@ const cards = [
     type: "Backend",
     live: null,
     github: "https://github.com/MarkCorzilius/Coderr",
+  },
+  {
+    logo: "/images/project_videoflix.svg",
+    title: "Videoflix",
+    description: "Video Streaming Platform",
+    type: "Backend",
+    live: null,
+    github: "https://github.com/MarkCorzilius/Videoflix",
   },
 ];
 
