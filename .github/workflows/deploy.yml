@@ -28,20 +28,22 @@ jobs:
     needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
+
       - name: Upload FTP
-    uses: SamKirkland/FTP-Deploy-Action@v4
-    with:
-      server: ${{ secrets.FTP_SERVER }}
-      username: ${{ secrets.FTP_USERNAME }}
-      password: ${{ secrets.FTP_PASSWORD }}
-      local-dir: ./out/
-      server-dir: ./www/
-      exclude: |
-        **/index.htm
-        **/sendMail.php
-        **/.htaccess
-        el-pollo-loco/**
-        join/**
-        dabbuble/**
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./out/
+          server-dir: ./www/
+          exclude: |
+            **/index.htm
+            **/sendMail.php
+            **/.htaccess
+            el-pollo-loco/**
+            join/**
+            dabbuble/**
